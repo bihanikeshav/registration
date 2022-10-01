@@ -1,0 +1,33 @@
+.header{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: thin;
+}
+.needs-validation{
+    padding: 10px;
+    background-color: rgb(238, 233, 233);
+}
+
+/* form{
+    background-color: rgb(241, 240, 240);
+    padding: 20;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.row{
+    padding:2px;
+    justify-content: center;
+}
+.btn{
+    background-color: #000000;
+    border: 0;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ */
