@@ -8,6 +8,9 @@
           event.preventDefault();
           event.stopPropagation();
         }
+        else{
+          alert("Submitted Successfully");
+        }
         form.classList.add('was-validated');
       }, false);
     });
