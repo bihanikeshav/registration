@@ -43,7 +43,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroupPrepend"><b>@</b></span>
               </div>
-              <input type="text" class="form-control" id="email" required>
+              <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" id="email" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -55,37 +55,36 @@
         </div>
         <div class="form-row">
           <div class="col-md-4">
-            <label for="password">Password</label>
+            <label for="password1">Password</label>
             <div class="input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroupPrepend"><b>*</b></span>
                   </div>
-                <input type="text" class="form-control" id="password" required>
+                <input type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" class="form-control" id="password1" required>
                 <div class="valid-feedback">
                     Looks good!
                   </div>
                   <div class="invalid-feedback">
-                      Password not good.
+                      Please provide a valid password.
                   </div>
                 </div>    
             </div>
           <div class="col-md-4">
-            <label for="cpassword">Confirm Password</label>
+            <label for="password2">Confirm Password</label>
             <div class="input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroupPrepend"><b>*</b></span>
                   </div>
-                <input type="text" class="form-control" id="cpassword" required>
+                <input type="password" class="form-control" id="password2" required>
                 <div class="valid-feedback">
                     Looks good!
                   </div>
                   <div class="invalid-feedback">
-                      Doesnt Amtch.
+                      Poassword doesn't matches.
                   </div>    
             </div>
             </div>
         </div>
-        <br>
         <div class="form-row">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -98,7 +97,9 @@
           </div>
         </div>
         <br>
+        <div class="form-row">
         <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
       </form>
 
 </body>

@@ -17,10 +17,6 @@
     flex-direction: row;
     align-content: center;
 }
-.row{
-    padding:2px;
-    justify-content: center;
-}
 .btn{
     background-color: #000000;
     border: 0;
@@ -31,3 +27,7 @@
     justify-content: center;
 }
  */
+ .form-row{
+    padding:2px;
+    justify-content: center;
+}
